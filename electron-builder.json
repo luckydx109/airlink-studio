@@ -1,0 +1,34 @@
+{
+  "appId": "com.deepmind.airlinkstudio",
+  "productName": "AirLink Studio",
+  "copyright": "Copyright © 2026",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "package.json"
+  ],
+  "extraResources": [
+    {
+      "from": "bin/scrcpy",
+      "to": "bin/scrcpy",
+      "filter": ["**/*"]
+    }
+  ],
+  "win": {
+    "target": ["portable", "nsis"],
+    "requestedExecutionLevel": "asInvoker",
+    "signAndEditExecutable": false,
+    "sign": null
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "AirLink Studio"
+  }
+}

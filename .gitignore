@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production & Build outputs
+dist/
+dist-electron/
+release/
+dist-release/
+build/
+*.exe
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.blockmap
+
+# Bundled binaries (pre-built external binaries should not be committed to Git source)
+bin/scrcpy/
+bin/*.zip
+bin/*.7z
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment & local credentials
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.pfx
+
+# Temp caches
+airlink_thumbnails/
+airlink_config.json
